@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Disease Outbreak Risk Predictor - India</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="theme-controls">
+            <button class="theme-btn" onclick="toggleTheme()" title="Toggle Dark Mode">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <button class="speech-btn" onclick="toggleSpeech()" title="Toggle Speech">
+                <i class="fas fa-volume-up" id="speech-icon"></i>
+            </button>
+        </div>
+
+        <div class="header">
+            <h1><i class="fas fa-shield-virus"></i> Advanced Disease Risk Predictor</h1>
+            <p>Real-time health risk assessment for Indian cities with AI-powered insights</p>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="number">28</div>
+                <div class="label">States</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">150+</div>
+                <div class="label">Cities</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">24/7</div>
+                <div class="label">Monitoring</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">Real-time</div>
+                <div class="label">Data</div>
+            </div>
+        </div>
+
+        <form id="riskForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="stateInput"><i class="fas fa-map-marker-alt"></i> Select State</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="stateInput" class="form-control" placeholder="Type your state name..." oninput="autocompleteState()">
+                        <i class="fas fa-chevron-down input-icon"></i>
+                        <div id="stateSuggestions" class="suggestions-box"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cityInput"><i class="fas fa-city"></i> Select City</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="cityInput" class="form-control" placeholder="Type your city name..." oninput="autocompleteCity()">
+                        <i class="fas fa-chevron-down input-icon"></i>
+                        <div id="suggestions" class="suggestions-box"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn-primary" onclick="checkRisk()">
+                <i class="fas fa-search"></i> Analyze Risk Level
+            </button>
+        </form>
+
+        <div id="loadingContainer" class="loading-container">
+            <div class="weather-spinner">
+                <div class="sun"></div>
+                <div class="cloud"></div>
+            </div>
+            <h3>Analyzing health risk factors...</h3>
+            <div class="loading-facts">
+                <h4>Did you know?</h4>
+                <p id="loadingFact"></p>
+            </div>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
