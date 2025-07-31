@@ -1,5 +1,7 @@
 # 🛡️ Advanced Disease Risk Predictor - India 🇮🇳
 
+<img src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12cbe8a4-f55c-4b40-85bb-d8e1405e7b84/dju79n1-6fd10d90-19ba-4ed5-929a-86f3f6355a06.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEyY2JlOGE0LWY1NWMtNGI0MC04NWJiLWQ4ZTE0MDVlN2I4NFwvZGp1NzluMS02ZmQxMGQ5MC0xOWJhLTRlZDUtOTI5YS04NmYzZjYzNTVhMDYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7WfU17Tv2cIQ3Te3vdUjZvLYBXM_4MKd0Q5X5A7opc0" />
+
 Real-time, AI-powered health risk assessment system for Indian states and cities.  
 Provides dynamic risk analysis using live **weather**, **air quality**, and **mobility data**.
 
